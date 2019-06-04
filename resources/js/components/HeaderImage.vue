@@ -225,17 +225,17 @@
   }
 
   .desk {
-    left: 2px;
+    left: calc(50% - (375px / 2));
     top: 110px;
   }
 
   .keyboard {
-    left: 222px;
+    left: calc(50% - (127px / 2) + 96px);
     top: 10px;
   }
 
   .phone {
-    left: 20px;
+    left: calc(50% - (127px / 2) - 94px);
     top: -3px;
   }
 
@@ -257,17 +257,17 @@
     }
 
     .desk {
-      left: 50px;
+      left: calc(50% - (375px / 2));
       top: calc(143px + 110px);
     }
 
     .keyboard {
-      left: 280px;
+      left: calc(50% - (127px / 2) + 96px);
       top: calc(143px + 9px);
     }
 
     .phone {
-      left: 80px;
+      left: calc(50% - (127px / 2) - 94px);
       top: calc(143px + -5px);
     }
   }
