@@ -18,3 +18,6 @@ Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/blog', function() {
+    abort(404);
+})->name('blog');
