@@ -2034,6 +2034,47 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2053,6 +2094,9 @@ __webpack_require__.r(__webpack_exports__);
       showNL: false,
       showEL: false,
       showHL: false,
+      showFitnessBody: false,
+      showDumbbell: false,
+      showBasketball: false,
       secondsUntilNextThought: 20
     };
   },
@@ -2160,8 +2204,14 @@ __webpack_require__.r(__webpack_exports__);
         return _this5.showFitnessThought = true;
       }, 1000);
       setTimeout(function () {
-        return _this5.showBody = true;
+        return _this5.showFitnessBody = true;
       }, 2000);
+      setTimeout(function () {
+        return _this5.showDumbbell = true;
+      }, 3000);
+      setTimeout(function () {
+        return _this5.showBasketball = true;
+      }, 4000);
       setTimeout(function () {
         return _this5.hideFitness();
       }, this.secondsUntilNextThought * 1000);
@@ -2170,14 +2220,16 @@ __webpack_require__.r(__webpack_exports__);
       var _this6 = this;
 
       this.showFitnessThought = false;
-      this.showBody = false;
+      this.showFitnessBody = false;
+      this.showDumbbell = false;
+      this.showBasketball = false;
       setTimeout(function () {
         return _this6.startCodingTransitions();
       }, 1000);
     }
   },
   created: function created() {
-    this.startCodingTransitions(); // this.startFamilyTransitions()
+    this.startCodingTransitions(); // this.startFitnessTransitions()
   }
 });
 
@@ -2195,7 +2247,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.head {\n  left: calc(50% - (75px / 2));\n  top: 0px;\n  z-index: 50;\n}\n.body {\n  left: calc(50% - (109px / 2));\n  top: calc(0px + 75px);\n}\n.codingBody {\n  left: calc(50% - (72px / 2));\n  top: calc(0px + 75px);\n}\n.desk {\n  left: calc(50% - (375px / 2));\n  top: 110px;\n}\n.keyboard {\n  left: calc(50% - (127px / 2) + 96px);\n  top: 10px;\n}\n.phone {\n  left: calc(50% - (127px / 2) - 94px);\n  top: -3px;\n}\n.al {\n  left: calc(50% - (91px / 2) - 95px);\n  top: 25px;\n}\n.nl {\n  left: calc(50% - (64px / 2) + 77px);\n  top: 120px;\n}\n.el {\n  left: calc(50% - (56px / 2) - 141px);\n  top: 170px;\n}\n.hl {\n  left: calc(50% - (39px / 2) + 132px);\n  top: 171px;\n}\n@media (min-width: 640px) {\n.head {\n    left: calc(50% - (75px / 2));\n    top: 143px;\n    z-index: 50;\n}\n.body {\n    left: calc(50% - (109px / 2));\n    top: calc(143px + 75px);\n}\n.codingBody {\n    left: calc(50% - (72px / 2));\n    top: calc(143px + 75px);\n}\n.desk {\n    left: calc(50% - (375px / 2));\n    top: calc(143px + 110px);\n}\n.keyboard {\n    left: calc(50% - (127px / 2) + 96px);\n    top: calc(143px + 9px);\n}\n.phone {\n    left: calc(50% - (127px / 2) - 94px);\n    top: calc(143px + -5px);\n}\n.al {\n    left: calc(50% - (91px / 2) - 95px);\n    top: calc(143px + 25px)\n}\n.nl {\n    left: calc(50% - (64px / 2) + 77px);\n    top: calc(143px + 120px)\n}\n.el {\n    left: calc(50% - (56px / 2) - 141px);\n    top: calc(143px + 170px)\n}\n.hl {\n    left: calc(50% - (39px / 2) + 132px);\n    top: calc(143px + 171px)\n}\n}\n.fade-enter-active, .fade-leave-active {\n  transition: opacity 3s;\n}\n.fade-enter, .fade-leave-to {\n  opacity: 0;\n}\n.screen-fade-enter-active, .screen-fade-leave-active {\n  transition: opacity 1s;\n}\n.screen-fade-enter, .screen-fade-leave-to {\n  opacity: 0;\n}\n.slide-left-enter-active, .slide-left-leave-active {\n  transition: all 2s ease;\n}\n.slide-left-enter, .slide-left-leave-to {\n  transform: translateX(80px);\n  opacity: 0;\n}\n.slide-right-enter-active, .slide-right-leave-active {\n  transition: all 2s ease;\n}\n.slide-right-enter, .slide-right-leave-to {\n  transform: translateX(-80px);\n  opacity: 0;\n}\n.slide-up-enter-active, .slide-up-leave-active {\n  transition: all 2s ease;\n}\n.slide-up-enter, .slide-up-leave-to {\n  transform: translateY(80px);\n  opacity: 0;\n}\n.slide-down-enter-active, .slide-down-leave-active {\n  transition: all 2s ease;\n}\n.slide-down-enter, .slide-down-leave-to {\n  transform: translateY(-80px);\n  opacity: 0;\n}\n", ""]);
+exports.push([module.i, "\n.head {\n  left: calc(50% - (75px / 2));\n  top: 0px;\n  z-index: 50;\n}\n.body {\n  left: calc(50% - (109px / 2));\n  top: calc(0px + 75px);\n}\n.fitnessBody {\n  left: calc(50% - (121px / 2));\n  top: calc(0px + 75px);\n}\n.codingBody {\n  left: calc(50% - (72px / 2));\n  top: calc(0px + 75px);\n}\n.desk {\n  left: calc(50% - (375px / 2));\n  top: 110px;\n}\n.keyboard {\n  left: calc(50% - (127px / 2) + 96px);\n  top: 10px;\n}\n.phone {\n  left: calc(50% - (127px / 2) - 94px);\n  top: -3px;\n}\n.al {\n  left: calc(50% - (91px / 2) - 95px);\n  top: 25px;\n}\n.nl {\n  left: calc(50% - (64px / 2) + 77px);\n  top: 120px;\n}\n.el {\n  left: calc(50% - (56px / 2) - 141px);\n  top: 170px;\n}\n.hl {\n  left: calc(50% - (39px / 2) + 132px);\n  top: 171px;\n}\n.dumbbell {\n  left: calc(50% - (54px / 2) - 56px);\n  top: 94px;\n}\n.basketball {\n  left: calc(50% - (46px / 2) + 77px);\n  top: 160px;\n  animation: bounce 0.5s;\n  animation-direction: alternate;\n  animation-timing-function: cubic-bezier(.5,0.05,1,.5);\n  animation-iteration-count: infinite;\n}\n@media (min-width: 640px) {\n.head {\n    left: calc(50% - (75px / 2));\n    top: 143px;\n    z-index: 50;\n}\n.body {\n    left: calc(50% - (109px / 2));\n    top: calc(143px + 75px);\n}\n.fitnessBody {\n    left: calc(50% - (121px / 2));\n    top: calc(143px + 75px);\n}\n.codingBody {\n    left: calc(50% - (72px / 2));\n    top: calc(143px + 75px);\n}\n.desk {\n    left: calc(50% - (375px / 2));\n    top: calc(143px + 110px);\n}\n.keyboard {\n    left: calc(50% - (127px / 2) + 96px);\n    top: calc(143px + 9px);\n}\n.phone {\n    left: calc(50% - (127px / 2) - 94px);\n    top: calc(143px + -5px);\n}\n.al {\n    left: calc(50% - (91px / 2) - 95px);\n    top: calc(143px + 25px);\n}\n.nl {\n    left: calc(50% - (64px / 2) + 77px);\n    top: calc(143px + 120px);\n}\n.el {\n    left: calc(50% - (56px / 2) - 141px);\n    top: calc(143px + 170px);\n}\n.hl {\n    left: calc(50% - (39px / 2) + 132px);\n    top: calc(143px + 171px);\n}\n.dumbbell {\n    left: calc(50% - (54px / 2) - 56px);\n    top: calc(143px + 94px);\n}\n.basketball {\n    left: calc(50% - (46px / 2) + 77px);\n    top: calc(143px + 160px);\n    animation-direction: alternate;\n    animation-timing-function: cubic-bezier(.5,0.05,1,.5);\n    animation-iteration-count: infinite;\n}\n}\n.fade-enter-active, .fade-leave-active {\n  transition: opacity 3s;\n}\n.fade-enter, .fade-leave-to {\n  opacity: 0;\n}\n.screen-fade-enter-active, .screen-fade-leave-active {\n  transition: opacity 1s;\n}\n.screen-fade-enter, .screen-fade-leave-to {\n  opacity: 0;\n}\n.slide-left-enter-active, .slide-left-leave-active {\n  transition: all 2s ease;\n}\n.slide-left-enter, .slide-left-leave-to {\n  transform: translateX(80px);\n  opacity: 0;\n}\n.slide-right-enter-active, .slide-right-leave-active {\n  transition: all 2s ease;\n}\n.slide-right-enter, .slide-right-leave-to {\n  transform: translateX(-80px);\n  opacity: 0;\n}\n.slide-up-enter-active, .slide-up-leave-active {\n  transition: all 2s ease;\n}\n.slide-up-enter, .slide-up-leave-to {\n  transform: translateY(80px);\n  opacity: 0;\n}\n.slide-down-enter-active, .slide-down-leave-active {\n  transition: all 2s ease;\n}\n.slide-down-enter, .slide-down-leave-to {\n  transform: translateY(-80px);\n  opacity: 0;\n}\n@keyframes bounce {\nfrom { transform: translate3d(0, 0, 0);\n}\nto   { transform: translate3d(0, 80px, 0);\n}\n}\n", ""]);
 
 // exports
 
@@ -20705,6 +20757,91 @@ var render = function() {
               {
                 name: "show",
                 rawName: "v-show",
+                value: _vm.showFitnessBody,
+                expression: "showFitnessBody"
+              }
+            ]
+          },
+          [
+            _c(
+              "svg",
+              {
+                staticClass: "absolute fitnessBody",
+                attrs: {
+                  width: "121",
+                  height: "192",
+                  viewBox: "0 0 121 192",
+                  fill: "none",
+                  xmlns: "http://www.w3.org/2000/svg"
+                }
+              },
+              [
+                _c("line", {
+                  attrs: {
+                    x1: "66.5",
+                    x2: "66.5",
+                    y2: "114",
+                    stroke: "white",
+                    "stroke-width": "3"
+                  }
+                }),
+                _vm._v(" "),
+                _c("line", {
+                  attrs: {
+                    x1: "66.352",
+                    y1: "113.65",
+                    x2: "29.352",
+                    y2: "190.65",
+                    stroke: "white",
+                    "stroke-width": "3"
+                  }
+                }),
+                _vm._v(" "),
+                _c("line", {
+                  attrs: {
+                    y1: "-1.5",
+                    x2: "85.4283",
+                    y2: "-1.5",
+                    transform:
+                      "matrix(0.433112 0.90134 0.90134 -0.433112 68 113)",
+                    stroke: "white",
+                    "stroke-width": "3"
+                  }
+                }),
+                _vm._v(" "),
+                _c("path", {
+                  attrs: {
+                    d: "M66.0505 35.0707L39.5505 61.0707L1.50003 46",
+                    stroke: "white",
+                    "stroke-width": "3"
+                  }
+                }),
+                _vm._v(" "),
+                _c("line", {
+                  attrs: {
+                    y1: "-1.5",
+                    x2: "74.2496",
+                    y2: "-1.5",
+                    transform:
+                      "matrix(0.713809 0.700341 0.700341 -0.713809 68 34)",
+                    stroke: "white",
+                    "stroke-width": "3"
+                  }
+                })
+              ]
+            )
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("transition", { attrs: { name: "fade" } }, [
+        _c(
+          "div",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
                 value: _vm.showDesk,
                 expression: "showDesk"
               }
@@ -21445,6 +21582,107 @@ var render = function() {
                       "matrix(0.713809 0.700341 0.700341 -0.713809 19.6543 38.2534)",
                     stroke: "white",
                     "stroke-width": "3"
+                  }
+                })
+              ]
+            )
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("transition", { attrs: { name: "fade" } }, [
+        _c(
+          "div",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.showDumbbell,
+                expression: "showDumbbell"
+              }
+            ],
+            key: "dumbbell"
+          },
+          [
+            _c(
+              "svg",
+              {
+                staticClass: "absolute dumbbell",
+                attrs: {
+                  width: "54",
+                  height: "54",
+                  viewBox: "0 0 54 54",
+                  fill: "none",
+                  xmlns: "http://www.w3.org/2000/svg"
+                }
+              },
+              [
+                _c("path", {
+                  attrs: {
+                    d:
+                      "M24.1525 44.0078L27.3426 46.2563L29.591 43.0663L21.6271 37.4529L35.1023 18.3349L43.0663 23.9483L45.3147 20.7582L42.1247 18.5097L44.3732 15.3197L39.5993 11.9548L41.8477 8.76475L38.6577 6.51626L36.4092 9.70631L31.6353 6.34144L29.3868 9.53149L26.1967 7.283L23.9483 10.4731L31.9122 16.0864L18.437 35.2044L10.4731 29.591L8.22456 32.7811L11.4146 35.0296L9.16612 38.2196L13.94 41.5845L11.6916 44.7746L14.8816 47.023L17.1301 43.833L21.904 47.1979L24.1525 44.0078Z",
+                    fill: "#7C9CAA",
+                    stroke: "white"
+                  }
+                })
+              ]
+            )
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("transition", { attrs: { name: "fade" } }, [
+        _c(
+          "div",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.showBasketball,
+                expression: "showBasketball"
+              }
+            ],
+            key: "basketball"
+          },
+          [
+            _c(
+              "svg",
+              {
+                staticClass: "absolute basketball",
+                attrs: {
+                  width: "46",
+                  height: "46",
+                  viewBox: "0 0 46 46",
+                  fill: "none",
+                  xmlns: "http://www.w3.org/2000/svg"
+                }
+              },
+              [
+                _c("circle", {
+                  attrs: { cx: "23", cy: "23", r: "23", fill: "#FA5F00" }
+                }),
+                _vm._v(" "),
+                _c("path", { attrs: { d: "M23 0V46", stroke: "black" } }),
+                _vm._v(" "),
+                _c("path", {
+                  attrs: { d: "M46.0007 23L0.000740051 23", stroke: "black" }
+                }),
+                _vm._v(" "),
+                _c("path", {
+                  attrs: {
+                    d:
+                      "M8 5.5C7.54043 5.69696 7.54053 5.69719 7.54064 5.69746C7.5407 5.6976 7.54084 5.69791 7.54096 5.6982C7.54121 5.69877 7.54152 5.69951 7.54191 5.7004C7.54268 5.70218 7.54373 5.7046 7.54506 5.70764C7.54771 5.71372 7.55148 5.7223 7.55637 5.73329C7.56614 5.75527 7.5804 5.78692 7.59918 5.82759C7.63675 5.90891 7.69245 6.02637 7.76665 6.17478C7.91503 6.47153 8.13763 6.89252 8.43754 7.39637C9.03679 8.40311 9.94778 9.74588 11.1961 11.0902C13.6924 13.7786 17.5659 16.5 23 16.5V15.5C17.9341 15.5 14.3076 12.9714 11.9289 10.4098C10.7397 9.12912 9.86946 7.84689 9.29683 6.88488C9.0108 6.40435 8.79981 6.00503 8.66108 5.72757C8.59173 5.58887 8.5405 5.48073 8.50702 5.40825C8.49028 5.37202 8.47799 5.34471 8.47009 5.32695C8.46614 5.31808 8.4633 5.3116 8.46155 5.30758C8.46067 5.30558 8.46007 5.30419 8.45974 5.30343C8.45958 5.30305 8.45948 5.30282 8.45945 5.30276C8.45944 5.30273 8.45947 5.3028 8.45946 5.30278C8.45951 5.30289 8.45957 5.30304 8 5.5ZM38 5.5C37.5404 5.30304 37.5405 5.30289 37.5405 5.30278C37.5405 5.3028 37.5406 5.30273 37.5405 5.30276C37.5405 5.30282 37.5404 5.30305 37.5403 5.30343C37.5399 5.30419 37.5393 5.30558 37.5385 5.30758C37.5367 5.3116 37.5339 5.31808 37.5299 5.32695C37.522 5.34471 37.5097 5.37202 37.493 5.40825C37.4595 5.48073 37.4083 5.58887 37.3389 5.72757C37.2002 6.00503 36.9892 6.40435 36.7032 6.88488C36.1305 7.84689 35.2603 9.12912 34.0711 10.4098C31.6924 12.9714 28.0659 15.5 23 15.5V16.5C28.4341 16.5 32.3076 13.7786 34.8039 11.0902C36.0522 9.74588 36.9632 8.40311 37.5625 7.39637C37.8624 6.89252 38.085 6.47153 38.2333 6.17478C38.3076 6.02637 38.3632 5.90891 38.4008 5.82759C38.4196 5.78692 38.4339 5.75527 38.4436 5.73329C38.4485 5.7223 38.4523 5.71372 38.4549 5.70764C38.4563 5.7046 38.4573 5.70218 38.4581 5.7004C38.4585 5.69951 38.4588 5.69877 38.459 5.6982C38.4592 5.69791 38.4593 5.6976 38.4594 5.69746C38.4595 5.69719 38.4596 5.69696 38 5.5Z",
+                    fill: "black"
+                  }
+                }),
+                _vm._v(" "),
+                _c("path", {
+                  attrs: {
+                    d:
+                      "M8 40C7.54043 39.803 7.54053 39.8028 7.54064 39.8025C7.5407 39.8024 7.54084 39.8021 7.54096 39.8018C7.54121 39.8012 7.54152 39.8005 7.54191 39.7996C7.54268 39.7978 7.54373 39.7954 7.54506 39.7924C7.54771 39.7863 7.55148 39.7777 7.55637 39.7667C7.56614 39.7447 7.5804 39.7131 7.59918 39.6724C7.63675 39.5911 7.69245 39.4736 7.76665 39.3252C7.91503 39.0285 8.13763 38.6075 8.43754 38.1036C9.03679 37.0969 9.94778 35.7541 11.1961 34.4098C13.6924 31.7214 17.5659 29 23 29V30C17.9341 30 14.3076 32.5286 11.9289 35.0902C10.7397 36.3709 9.86946 37.6531 9.29683 38.6151C9.0108 39.0956 8.79981 39.495 8.66108 39.7724C8.59173 39.9111 8.5405 40.0193 8.50702 40.0917C8.49028 40.128 8.47799 40.1553 8.47009 40.173C8.46614 40.1819 8.4633 40.1884 8.46155 40.1924C8.46067 40.1944 8.46007 40.1958 8.45974 40.1966C8.45958 40.197 8.45948 40.1972 8.45945 40.1972C8.45944 40.1973 8.45947 40.1972 8.45946 40.1972C8.45951 40.1971 8.45957 40.197 8 40ZM38 40C37.5404 40.197 37.5405 40.1971 37.5405 40.1972C37.5405 40.1972 37.5406 40.1973 37.5405 40.1972C37.5405 40.1972 37.5404 40.197 37.5403 40.1966C37.5399 40.1958 37.5393 40.1944 37.5385 40.1924C37.5367 40.1884 37.5339 40.1819 37.5299 40.173C37.522 40.1553 37.5097 40.128 37.493 40.0917C37.4595 40.0193 37.4083 39.9111 37.3389 39.7724C37.2002 39.495 36.9892 39.0956 36.7032 38.6151C36.1305 37.6531 35.2603 36.3709 34.0711 35.0902C31.6924 32.5286 28.0659 30 23 30V29C28.4341 29 32.3076 31.7214 34.8039 34.4098C36.0522 35.7541 36.9632 37.0969 37.5625 38.1036C37.8624 38.6075 38.085 39.0285 38.2333 39.3252C38.3076 39.4736 38.3632 39.5911 38.4008 39.6724C38.4196 39.7131 38.4339 39.7447 38.4436 39.7667C38.4485 39.7777 38.4523 39.7863 38.4549 39.7924C38.4563 39.7954 38.4573 39.7978 38.4581 39.7996C38.4585 39.8005 38.4588 39.8012 38.459 39.8018C38.4592 39.8021 38.4593 39.8024 38.4594 39.8025C38.4595 39.8028 38.4596 39.803 38 40Z",
+                    fill: "black"
                   }
                 })
               ]
