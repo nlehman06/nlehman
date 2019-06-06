@@ -1,11 +1,12 @@
-const {colors} = require('tailwindcss/defaultTheme')
+const {colors, fontSize, fontFamily} = require('tailwindcss/defaultTheme')
 
 module.exports = {
   theme:    {
     extend:          {
-      colors: {
-        blue: {
+      colors:     {
+        blue:   {
           ...colors.blue,
+          '100': '#eaedf1',
           '300': '#7C9CAA',
           '900': '#1C343D',
         },
@@ -13,6 +14,20 @@ module.exports = {
           ...colors.orange,
           '600': '#FA5F00'
         }
+      },
+      fontSize:   {
+        ...fontSize,
+        'base': '1.1rem'
+      },
+      fontFamily: {
+        sans:  [
+          'Work Sans',
+          ...fontFamily.sans,
+        ],
+        serif: [
+          'Taviraj',
+          ...fontFamily.serif,
+        ]
       }
     },
     radialGradients: {

@@ -11,6 +11,26 @@
  */
 @tailwind base;
 
+a {
+    @apply text-white underline;
+}
+a:hover {
+    @apply no-underline;
+}
+
+ol {
+    @apply list-decimal pl-10;
+}
+
+ul {
+    @apply list-disc pl-10;
+}
+
+code, kbd, samp {
+    @apply font-mono text-base rounded p-1 text-sm;
+    background: #011527;
+}
+
 /**
  * This injects any component classes registered by plugins.
  *
@@ -35,6 +55,7 @@
  * @import "components/buttons";
  * @import "components/forms";
  */
+@import "./components/blog.css";
 
 /**
  * This injects all of Tailwind's utility classes, generated based on your

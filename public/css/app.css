@@ -1,3 +1,93 @@
+.post-body p {
+  margin-bottom:2rem;
+}
+
+.post-body blockquote, .post-body h1, .post-body h2, .post-body h3, .post-body ol, .post-body p, .post-body pre, .post-body ul {
+  min-width:100%;
+  max-width:100%;
+}
+
+.post-body pre {
+  background-color:#000;
+  border-width:2px;
+  border-style:solid;
+  border-color:#a0aec0;
+  overflow:auto;
+  padding:0.5rem;
+  margin-bottom:2rem;
+  font-family:Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.post-body h2 {
+  margin-bottom:2rem;
+  font-size:1.875rem;
+}
+
+.post-body hr{
+  border-style:none;
+  color:#7C9CAA;
+  text-align:center;
+  margin-bottom:5rem;
+  letter-spacing:1em;
+}
+
+.post-body hr:before{
+  content:"..."
+}
+
+.post-body h3{
+  font-size:1.125rem;
+}
+
+.post-body h3,.post-body ol,.post-body ul{
+  margin-bottom:2rem;
+}
+
+.post-body ol li,.post-body ul li{
+  margin-bottom:0.75rem;
+}
+
+.post-body .embedded_image{
+  margin-bottom:2rem;
+}
+
+.post-body .embedded_image[data-layout=wide] img{
+  max-width:72rem;
+}
+
+@media screen and (max-width:1024px){
+  .post-body .embedded_image[data-layout=wide] img{
+    max-width:100%;
+  }
+}
+
+.post-body .embedded_image img{
+  max-width:56rem;
+  padding-left:1.25rem;
+  padding-right:1.25rem;
+  display:block;
+}
+
+.post-body .embedded_image p{
+  margin-top:0.75rem;
+  text-align:center;
+  color:#7C9CAA;
+  font-size:0.875rem;
+  margin-bottom:0;
+}
+
+.post-body .inline_html{
+  margin-bottom:2rem;
+}
+
+.post-body blockquote{
+  margin-bottom:2rem;
+  padding-left:1.25rem;
+  font-style:italic;
+  border-left-width:4px;
+  border-color:#7C9CAA;
+}
+
 /**
  * This injects Tailwind's base styles, which is a combination of
  * Normalize.css and some additional base styles.
@@ -611,6 +701,34 @@ video {
   height: auto;
 }
 
+a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 2.5rem;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 2.5rem;
+}
+
+code, kbd, samp {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1.1rem;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  font-size: 0.875rem;
+  background: #011527;
+}
+
 /**
  * This injects any component classes registered by plugins.
  *
@@ -919,7 +1037,7 @@ video {
 }
 
 .bg-blue-100 {
-  background-color: #ebf8ff;
+  background-color: #eaedf1;
 }
 
 .bg-blue-200 {
@@ -1291,7 +1409,7 @@ video {
 }
 
 .hover\:bg-blue-100:hover {
-  background-color: #ebf8ff;
+  background-color: #eaedf1;
 }
 
 .hover\:bg-blue-200:hover {
@@ -1663,7 +1781,7 @@ video {
 }
 
 .focus\:bg-blue-100:focus {
-  background-color: #ebf8ff;
+  background-color: #eaedf1;
 }
 
 .focus\:bg-blue-200:focus {
@@ -2115,7 +2233,7 @@ video {
 }
 
 .border-blue-100 {
-  border-color: #ebf8ff;
+  border-color: #eaedf1;
 }
 
 .border-blue-200 {
@@ -2487,7 +2605,7 @@ video {
 }
 
 .hover\:border-blue-100:hover {
-  border-color: #ebf8ff;
+  border-color: #eaedf1;
 }
 
 .hover\:border-blue-200:hover {
@@ -2859,7 +2977,7 @@ video {
 }
 
 .focus\:border-blue-100:focus {
-  border-color: #ebf8ff;
+  border-color: #eaedf1;
 }
 
 .focus\:border-blue-200:focus {
@@ -3601,11 +3719,11 @@ video {
 }
 
 .font-sans {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Work Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-serif {
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: Taviraj, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .font-mono {
@@ -6256,7 +6374,7 @@ video {
 }
 
 .text-blue-100 {
-  color: #ebf8ff;
+  color: #eaedf1;
 }
 
 .text-blue-200 {
@@ -6628,7 +6746,7 @@ video {
 }
 
 .hover\:text-blue-100:hover {
-  color: #ebf8ff;
+  color: #eaedf1;
 }
 
 .hover\:text-blue-200:hover {
@@ -7000,7 +7118,7 @@ video {
 }
 
 .focus\:text-blue-100:focus {
-  color: #ebf8ff;
+  color: #eaedf1;
 }
 
 .focus\:text-blue-200:focus {
@@ -7152,7 +7270,7 @@ video {
 }
 
 .text-base {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .text-lg {
@@ -7895,7 +8013,7 @@ video {
   }
 
   .sm\:bg-blue-100 {
-    background-color: #ebf8ff;
+    background-color: #eaedf1;
   }
 
   .sm\:bg-blue-200 {
@@ -8267,7 +8385,7 @@ video {
   }
 
   .sm\:hover\:bg-blue-100:hover {
-    background-color: #ebf8ff;
+    background-color: #eaedf1;
   }
 
   .sm\:hover\:bg-blue-200:hover {
@@ -8639,7 +8757,7 @@ video {
   }
 
   .sm\:focus\:bg-blue-100:focus {
-    background-color: #ebf8ff;
+    background-color: #eaedf1;
   }
 
   .sm\:focus\:bg-blue-200:focus {
@@ -9091,7 +9209,7 @@ video {
   }
 
   .sm\:border-blue-100 {
-    border-color: #ebf8ff;
+    border-color: #eaedf1;
   }
 
   .sm\:border-blue-200 {
@@ -9463,7 +9581,7 @@ video {
   }
 
   .sm\:hover\:border-blue-100:hover {
-    border-color: #ebf8ff;
+    border-color: #eaedf1;
   }
 
   .sm\:hover\:border-blue-200:hover {
@@ -9835,7 +9953,7 @@ video {
   }
 
   .sm\:focus\:border-blue-100:focus {
-    border-color: #ebf8ff;
+    border-color: #eaedf1;
   }
 
   .sm\:focus\:border-blue-200:focus {
@@ -10577,11 +10695,11 @@ video {
   }
 
   .sm\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Work Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .sm\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: Taviraj, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .sm\:font-mono {
@@ -13232,7 +13350,7 @@ video {
   }
 
   .sm\:text-blue-100 {
-    color: #ebf8ff;
+    color: #eaedf1;
   }
 
   .sm\:text-blue-200 {
@@ -13604,7 +13722,7 @@ video {
   }
 
   .sm\:hover\:text-blue-100:hover {
-    color: #ebf8ff;
+    color: #eaedf1;
   }
 
   .sm\:hover\:text-blue-200:hover {
@@ -13976,7 +14094,7 @@ video {
   }
 
   .sm\:focus\:text-blue-100:focus {
-    color: #ebf8ff;
+    color: #eaedf1;
   }
 
   .sm\:focus\:text-blue-200:focus {
@@ -14128,7 +14246,7 @@ video {
   }
 
   .sm\:text-base {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .sm\:text-lg {
@@ -14857,7 +14975,7 @@ video {
   }
 
   .md\:bg-blue-100 {
-    background-color: #ebf8ff;
+    background-color: #eaedf1;
   }
 
   .md\:bg-blue-200 {
@@ -15229,7 +15347,7 @@ video {
   }
 
   .md\:hover\:bg-blue-100:hover {
-    background-color: #ebf8ff;
+    background-color: #eaedf1;
   }
 
   .md\:hover\:bg-blue-200:hover {
@@ -15601,7 +15719,7 @@ video {
   }
 
   .md\:focus\:bg-blue-100:focus {
-    background-color: #ebf8ff;
+    background-color: #eaedf1;
   }
 
   .md\:focus\:bg-blue-200:focus {
@@ -16053,7 +16171,7 @@ video {
   }
 
   .md\:border-blue-100 {
-    border-color: #ebf8ff;
+    border-color: #eaedf1;
   }
 
   .md\:border-blue-200 {
@@ -16425,7 +16543,7 @@ video {
   }
 
   .md\:hover\:border-blue-100:hover {
-    border-color: #ebf8ff;
+    border-color: #eaedf1;
   }
 
   .md\:hover\:border-blue-200:hover {
@@ -16797,7 +16915,7 @@ video {
   }
 
   .md\:focus\:border-blue-100:focus {
-    border-color: #ebf8ff;
+    border-color: #eaedf1;
   }
 
   .md\:focus\:border-blue-200:focus {
@@ -17539,11 +17657,11 @@ video {
   }
 
   .md\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Work Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .md\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: Taviraj, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .md\:font-mono {
@@ -20194,7 +20312,7 @@ video {
   }
 
   .md\:text-blue-100 {
-    color: #ebf8ff;
+    color: #eaedf1;
   }
 
   .md\:text-blue-200 {
@@ -20566,7 +20684,7 @@ video {
   }
 
   .md\:hover\:text-blue-100:hover {
-    color: #ebf8ff;
+    color: #eaedf1;
   }
 
   .md\:hover\:text-blue-200:hover {
@@ -20938,7 +21056,7 @@ video {
   }
 
   .md\:focus\:text-blue-100:focus {
-    color: #ebf8ff;
+    color: #eaedf1;
   }
 
   .md\:focus\:text-blue-200:focus {
@@ -21090,7 +21208,7 @@ video {
   }
 
   .md\:text-base {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .md\:text-lg {
@@ -21819,7 +21937,7 @@ video {
   }
 
   .lg\:bg-blue-100 {
-    background-color: #ebf8ff;
+    background-color: #eaedf1;
   }
 
   .lg\:bg-blue-200 {
@@ -22191,7 +22309,7 @@ video {
   }
 
   .lg\:hover\:bg-blue-100:hover {
-    background-color: #ebf8ff;
+    background-color: #eaedf1;
   }
 
   .lg\:hover\:bg-blue-200:hover {
@@ -22563,7 +22681,7 @@ video {
   }
 
   .lg\:focus\:bg-blue-100:focus {
-    background-color: #ebf8ff;
+    background-color: #eaedf1;
   }
 
   .lg\:focus\:bg-blue-200:focus {
@@ -23015,7 +23133,7 @@ video {
   }
 
   .lg\:border-blue-100 {
-    border-color: #ebf8ff;
+    border-color: #eaedf1;
   }
 
   .lg\:border-blue-200 {
@@ -23387,7 +23505,7 @@ video {
   }
 
   .lg\:hover\:border-blue-100:hover {
-    border-color: #ebf8ff;
+    border-color: #eaedf1;
   }
 
   .lg\:hover\:border-blue-200:hover {
@@ -23759,7 +23877,7 @@ video {
   }
 
   .lg\:focus\:border-blue-100:focus {
-    border-color: #ebf8ff;
+    border-color: #eaedf1;
   }
 
   .lg\:focus\:border-blue-200:focus {
@@ -24501,11 +24619,11 @@ video {
   }
 
   .lg\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Work Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .lg\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: Taviraj, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .lg\:font-mono {
@@ -27156,7 +27274,7 @@ video {
   }
 
   .lg\:text-blue-100 {
-    color: #ebf8ff;
+    color: #eaedf1;
   }
 
   .lg\:text-blue-200 {
@@ -27528,7 +27646,7 @@ video {
   }
 
   .lg\:hover\:text-blue-100:hover {
-    color: #ebf8ff;
+    color: #eaedf1;
   }
 
   .lg\:hover\:text-blue-200:hover {
@@ -27900,7 +28018,7 @@ video {
   }
 
   .lg\:focus\:text-blue-100:focus {
-    color: #ebf8ff;
+    color: #eaedf1;
   }
 
   .lg\:focus\:text-blue-200:focus {
@@ -28052,7 +28170,7 @@ video {
   }
 
   .lg\:text-base {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .lg\:text-lg {
@@ -28781,7 +28899,7 @@ video {
   }
 
   .xl\:bg-blue-100 {
-    background-color: #ebf8ff;
+    background-color: #eaedf1;
   }
 
   .xl\:bg-blue-200 {
@@ -29153,7 +29271,7 @@ video {
   }
 
   .xl\:hover\:bg-blue-100:hover {
-    background-color: #ebf8ff;
+    background-color: #eaedf1;
   }
 
   .xl\:hover\:bg-blue-200:hover {
@@ -29525,7 +29643,7 @@ video {
   }
 
   .xl\:focus\:bg-blue-100:focus {
-    background-color: #ebf8ff;
+    background-color: #eaedf1;
   }
 
   .xl\:focus\:bg-blue-200:focus {
@@ -29977,7 +30095,7 @@ video {
   }
 
   .xl\:border-blue-100 {
-    border-color: #ebf8ff;
+    border-color: #eaedf1;
   }
 
   .xl\:border-blue-200 {
@@ -30349,7 +30467,7 @@ video {
   }
 
   .xl\:hover\:border-blue-100:hover {
-    border-color: #ebf8ff;
+    border-color: #eaedf1;
   }
 
   .xl\:hover\:border-blue-200:hover {
@@ -30721,7 +30839,7 @@ video {
   }
 
   .xl\:focus\:border-blue-100:focus {
-    border-color: #ebf8ff;
+    border-color: #eaedf1;
   }
 
   .xl\:focus\:border-blue-200:focus {
@@ -31463,11 +31581,11 @@ video {
   }
 
   .xl\:font-sans {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Work Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .xl\:font-serif {
-    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: Taviraj, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .xl\:font-mono {
@@ -34118,7 +34236,7 @@ video {
   }
 
   .xl\:text-blue-100 {
-    color: #ebf8ff;
+    color: #eaedf1;
   }
 
   .xl\:text-blue-200 {
@@ -34490,7 +34608,7 @@ video {
   }
 
   .xl\:hover\:text-blue-100:hover {
-    color: #ebf8ff;
+    color: #eaedf1;
   }
 
   .xl\:hover\:text-blue-200:hover {
@@ -34862,7 +34980,7 @@ video {
   }
 
   .xl\:focus\:text-blue-100:focus {
-    color: #ebf8ff;
+    color: #eaedf1;
   }
 
   .xl\:focus\:text-blue-200:focus {
@@ -35014,7 +35132,7 @@ video {
   }
 
   .xl\:text-base {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .xl\:text-lg {

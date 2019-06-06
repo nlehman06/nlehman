@@ -1,0 +1,56 @@
+.post-body p {
+    @apply mb-8;
+}
+.post-body blockquote, .post-body h1, .post-body h2, .post-body h3, .post-body ol, .post-body p, .post-body pre, .post-body ul {
+    @apply min-w-full max-w-full;
+}
+
+.post-body pre {
+    @apply bg-black border-2 border-solid border-gray-500 overflow-auto p-2 mb-8 font-mono;
+}
+.post-body h2 {
+    @apply mb-8 text-3xl;
+}
+
+
+.post-body hr{
+    @apply border-none text-blue-300 text-center mb-20;
+    letter-spacing:1em;
+}
+.post-body hr:before{
+    content:"..."
+}
+
+.post-body h3{
+    @apply text-lg;
+}
+.post-body h3,.post-body ol,.post-body ul{
+    @apply mb-8;
+}
+.post-body ol li,.post-body ul li{
+    @apply mb-3;
+}
+.post-body .embedded_image{
+    @apply mb-8;
+}
+.post-body .embedded_image[data-layout=wide] img{
+    @apply max-w-6xl;
+}
+@media screen and (max-width:1024px){
+    .post-body .embedded_image[data-layout=wide] img{
+        @apply max-w-full;
+    }
+}
+.post-body .embedded_image img{
+    @apply max-w-4xl px-5 block;
+}
+.post-body .embedded_image p{
+    @apply mt-3 text-center text-blue-300 text-sm mb-0;
+}
+.post-body .inline_html{
+    @apply mb-8;
+}
+.post-body blockquote{
+    @apply mb-8 pl-5 italic border-l-4 border-blue-300;
+}
+
