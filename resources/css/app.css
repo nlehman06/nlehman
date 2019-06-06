@@ -26,6 +26,10 @@ ul {
     @apply list-disc pl-10;
 }
 
+h3 {
+    @apply text-lg font-bold;
+}
+
 code, kbd, samp {
     @apply font-mono text-base rounded p-1 text-sm;
     background: #011527;

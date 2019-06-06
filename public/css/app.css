@@ -720,6 +720,11 @@ ul {
   padding-left: 2.5rem;
 }
 
+h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
 code, kbd, samp {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1.1rem;
