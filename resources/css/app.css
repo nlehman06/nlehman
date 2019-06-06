@@ -29,6 +29,9 @@ ul {
 h3 {
     @apply text-lg font-bold;
 }
+h1 {
+    @apply text-4xl;
+}
 
 code, kbd, samp {
     @apply font-mono text-base rounded p-1 text-sm;

@@ -25,7 +25,7 @@
                 <div class="flex mb-10">
                     <div class="w-3/4 pr-5">
                         <h3 class="font-sans mb-2">
-                            <a href="blog/{{$post->slug}}">{{ $post->title }}</a>
+                            <a href="blog/{{$post->slug}}" class="no-underline hover:underline">{{ $post->title }}</a>
                         </h3>
                         <p class="leading-normal text-sm text-light">{{ $post->excerpt }}</p>
                         <p class="font-sans text-sm mt-2">Posted on {{ $post->publish_date->format('F jS, Y') }}</p>
