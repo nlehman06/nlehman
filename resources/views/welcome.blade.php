@@ -13,7 +13,7 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron:900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap" rel="stylesheet">
 
 </head>
 <body class="antialiased text-lg font-body text-blue-900">
@@ -22,6 +22,8 @@
     <welcome-header></welcome-header>
 
     <welcome-icons></welcome-icons>
+
+    <full-stack></full-stack>
 
 </div>
 
