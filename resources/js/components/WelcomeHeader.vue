@@ -63,6 +63,7 @@
     background-repeat: no-repeat, no-repeat, repeat-x;
     background-position: -195px -27%, -137% 0, bottom;
     background-size: 100%, 150%, 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 60% 100%, 0 85%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 60% 100%, 0 85%);
   }
 
@@ -75,6 +76,7 @@
       background-repeat: no-repeat, no-repeat, no-repeat, repeat-x;
       background-position: -27% -27%, 144% -0%, 142% -0%;
       background-size: 38%, 50%, 50%, 100%;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 100%, 0 75%);
       clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 100%, 0 75%);
     }
   }
