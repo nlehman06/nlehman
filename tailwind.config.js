@@ -6,56 +6,21 @@ module.exports = {
       colors:     {
         blue:   {
           ...colors.blue,
-          '100': '#eaedf1',
-          '300': '#7C9CAA',
-          '900': '#1C343D',
-          '950': '#122126',
+          '800': '#16294D',
+          '100-25': 'rgba(226, 232, 240, 0.25)',
         },
-        orange: {
-          ...colors.orange,
-          '600': '#FA5F00'
-        }
       },
       fontSize:   {
         ...fontSize,
         'base': '1.1rem'
       },
       fontFamily: {
-        sans:  [
-          'Work Sans',
-          ...fontFamily.sans,
-        ],
-        serif: [
-          'Taviraj',
-          ...fontFamily.serif,
-        ]
+        display: ['Orbitron', ...fontFamily.sans],
+        body: ['Montserrat', ...fontFamily.sans],
       }
     },
-    radialGradients: {
-      shapes:    { // defaults to this value
-        'default': 'circle',
-      },
-      sizes:     { // defaults to this value
-        'default': '',
-      },
-      positions: { // defaults to these values
-        'default': 'center',
-        't':       'top',
-        'tr':      'top right',
-        'r':       'right',
-        'br':      '80% 80%',
-        'b':       'bottom',
-        'bl':      'bottom left',
-        'l':       'left',
-        'tl':      'top left',
-      },
-      colors:    { // defaults to {}
-        'blue-blue': ['#5F8F9D', '#365960 65%'],
-      },
-    },
   },
-  variants: {},
-  plugins:  [
-    require('tailwindcss-gradients')(),
-  ]
+  variants: {
+    opacity: ['responsive', 'hover']
+  },
 }
