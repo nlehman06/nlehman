@@ -16,10 +16,12 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
 
 </head>
-<body class="antialiased text-lg font-body">
+<body class="antialiased text-lg font-body text-blue-900">
 <div id="app">
 
-    <welcome-header />
+    <welcome-header></welcome-header>
+
+    <welcome-icons></welcome-icons>
 
 </div>
 

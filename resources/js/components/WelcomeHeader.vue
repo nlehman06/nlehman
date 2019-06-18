@@ -1,7 +1,7 @@
 <template>
   <div class="shadow-wrap">
     <header class="px-4 header-gradient flex flex-col text-blue-100 items-center">
-      <nav class="container mx-auto flex justify-between items-center">
+      <nav class="max-w-6xl container mx-auto flex justify-between items-center">
         <svg class="w-16 h-16" viewBox="0 0 663 481" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 158L140 0V319L0 481V158Z" fill="url(#paint0_linear)"/>
           <path d="M280 158L420 0V319L280 481V158Z" fill="url(#paint1_linear)"/>

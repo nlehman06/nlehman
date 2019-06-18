@@ -9,6 +9,10 @@ module.exports = {
           '800': '#16294D',
           '100-25': 'rgba(226, 232, 240, 0.25)',
         },
+        gray:   {
+          ...colors.gray,
+          '900': '#1E222B',
+        },
       },
       fontSize:   {
         ...fontSize,

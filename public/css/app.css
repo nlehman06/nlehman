@@ -871,7 +871,7 @@ code, kbd, samp {
 }
 
 .bg-gray-900 {
-  background-color: #1a202c;
+  background-color: #1E222B;
 }
 
 .bg-red-100 {
@@ -1247,7 +1247,7 @@ code, kbd, samp {
 }
 
 .hover\:bg-gray-900:hover {
-  background-color: #1a202c;
+  background-color: #1E222B;
 }
 
 .hover\:bg-red-100:hover {
@@ -1623,7 +1623,7 @@ code, kbd, samp {
 }
 
 .focus\:bg-gray-900:focus {
-  background-color: #1a202c;
+  background-color: #1E222B;
 }
 
 .focus\:bg-red-100:focus {
@@ -2079,7 +2079,7 @@ code, kbd, samp {
 }
 
 .border-gray-900 {
-  border-color: #1a202c;
+  border-color: #1E222B;
 }
 
 .border-red-100 {
@@ -2455,7 +2455,7 @@ code, kbd, samp {
 }
 
 .hover\:border-gray-900:hover {
-  border-color: #1a202c;
+  border-color: #1E222B;
 }
 
 .hover\:border-red-100:hover {
@@ -2831,7 +2831,7 @@ code, kbd, samp {
 }
 
 .focus\:border-gray-900:focus {
-  border-color: #1a202c;
+  border-color: #1E222B;
 }
 
 .focus\:border-red-100:focus {
@@ -6260,7 +6260,7 @@ code, kbd, samp {
 }
 
 .text-gray-900 {
-  color: #1a202c;
+  color: #1E222B;
 }
 
 .text-red-100 {
@@ -6636,7 +6636,7 @@ code, kbd, samp {
 }
 
 .hover\:text-gray-900:hover {
-  color: #1a202c;
+  color: #1E222B;
 }
 
 .hover\:text-red-100:hover {
@@ -7012,7 +7012,7 @@ code, kbd, samp {
 }
 
 .focus\:text-gray-900:focus {
-  color: #1a202c;
+  color: #1E222B;
 }
 
 .focus\:text-red-100:focus {
@@ -7875,7 +7875,7 @@ code, kbd, samp {
   }
 
   .sm\:bg-gray-900 {
-    background-color: #1a202c;
+    background-color: #1E222B;
   }
 
   .sm\:bg-red-100 {
@@ -8251,7 +8251,7 @@ code, kbd, samp {
   }
 
   .sm\:hover\:bg-gray-900:hover {
-    background-color: #1a202c;
+    background-color: #1E222B;
   }
 
   .sm\:hover\:bg-red-100:hover {
@@ -8627,7 +8627,7 @@ code, kbd, samp {
   }
 
   .sm\:focus\:bg-gray-900:focus {
-    background-color: #1a202c;
+    background-color: #1E222B;
   }
 
   .sm\:focus\:bg-red-100:focus {
@@ -9083,7 +9083,7 @@ code, kbd, samp {
   }
 
   .sm\:border-gray-900 {
-    border-color: #1a202c;
+    border-color: #1E222B;
   }
 
   .sm\:border-red-100 {
@@ -9459,7 +9459,7 @@ code, kbd, samp {
   }
 
   .sm\:hover\:border-gray-900:hover {
-    border-color: #1a202c;
+    border-color: #1E222B;
   }
 
   .sm\:hover\:border-red-100:hover {
@@ -9835,7 +9835,7 @@ code, kbd, samp {
   }
 
   .sm\:focus\:border-gray-900:focus {
-    border-color: #1a202c;
+    border-color: #1E222B;
   }
 
   .sm\:focus\:border-red-100:focus {
@@ -13264,7 +13264,7 @@ code, kbd, samp {
   }
 
   .sm\:text-gray-900 {
-    color: #1a202c;
+    color: #1E222B;
   }
 
   .sm\:text-red-100 {
@@ -13640,7 +13640,7 @@ code, kbd, samp {
   }
 
   .sm\:hover\:text-gray-900:hover {
-    color: #1a202c;
+    color: #1E222B;
   }
 
   .sm\:hover\:text-red-100:hover {
@@ -14016,7 +14016,7 @@ code, kbd, samp {
   }
 
   .sm\:focus\:text-gray-900:focus {
-    color: #1a202c;
+    color: #1E222B;
   }
 
   .sm\:focus\:text-red-100:focus {
@@ -14865,7 +14865,7 @@ code, kbd, samp {
   }
 
   .md\:bg-gray-900 {
-    background-color: #1a202c;
+    background-color: #1E222B;
   }
 
   .md\:bg-red-100 {
@@ -15241,7 +15241,7 @@ code, kbd, samp {
   }
 
   .md\:hover\:bg-gray-900:hover {
-    background-color: #1a202c;
+    background-color: #1E222B;
   }
 
   .md\:hover\:bg-red-100:hover {
@@ -15617,7 +15617,7 @@ code, kbd, samp {
   }
 
   .md\:focus\:bg-gray-900:focus {
-    background-color: #1a202c;
+    background-color: #1E222B;
   }
 
   .md\:focus\:bg-red-100:focus {
@@ -16073,7 +16073,7 @@ code, kbd, samp {
   }
 
   .md\:border-gray-900 {
-    border-color: #1a202c;
+    border-color: #1E222B;
   }
 
   .md\:border-red-100 {
@@ -16449,7 +16449,7 @@ code, kbd, samp {
   }
 
   .md\:hover\:border-gray-900:hover {
-    border-color: #1a202c;
+    border-color: #1E222B;
   }
 
   .md\:hover\:border-red-100:hover {
@@ -16825,7 +16825,7 @@ code, kbd, samp {
   }
 
   .md\:focus\:border-gray-900:focus {
-    border-color: #1a202c;
+    border-color: #1E222B;
   }
 
   .md\:focus\:border-red-100:focus {
@@ -20254,7 +20254,7 @@ code, kbd, samp {
   }
 
   .md\:text-gray-900 {
-    color: #1a202c;
+    color: #1E222B;
   }
 
   .md\:text-red-100 {
@@ -20630,7 +20630,7 @@ code, kbd, samp {
   }
 
   .md\:hover\:text-gray-900:hover {
-    color: #1a202c;
+    color: #1E222B;
   }
 
   .md\:hover\:text-red-100:hover {
@@ -21006,7 +21006,7 @@ code, kbd, samp {
   }
 
   .md\:focus\:text-gray-900:focus {
-    color: #1a202c;
+    color: #1E222B;
   }
 
   .md\:focus\:text-red-100:focus {
@@ -21855,7 +21855,7 @@ code, kbd, samp {
   }
 
   .lg\:bg-gray-900 {
-    background-color: #1a202c;
+    background-color: #1E222B;
   }
 
   .lg\:bg-red-100 {
@@ -22231,7 +22231,7 @@ code, kbd, samp {
   }
 
   .lg\:hover\:bg-gray-900:hover {
-    background-color: #1a202c;
+    background-color: #1E222B;
   }
 
   .lg\:hover\:bg-red-100:hover {
@@ -22607,7 +22607,7 @@ code, kbd, samp {
   }
 
   .lg\:focus\:bg-gray-900:focus {
-    background-color: #1a202c;
+    background-color: #1E222B;
   }
 
   .lg\:focus\:bg-red-100:focus {
@@ -23063,7 +23063,7 @@ code, kbd, samp {
   }
 
   .lg\:border-gray-900 {
-    border-color: #1a202c;
+    border-color: #1E222B;
   }
 
   .lg\:border-red-100 {
@@ -23439,7 +23439,7 @@ code, kbd, samp {
   }
 
   .lg\:hover\:border-gray-900:hover {
-    border-color: #1a202c;
+    border-color: #1E222B;
   }
 
   .lg\:hover\:border-red-100:hover {
@@ -23815,7 +23815,7 @@ code, kbd, samp {
   }
 
   .lg\:focus\:border-gray-900:focus {
-    border-color: #1a202c;
+    border-color: #1E222B;
   }
 
   .lg\:focus\:border-red-100:focus {
@@ -27244,7 +27244,7 @@ code, kbd, samp {
   }
 
   .lg\:text-gray-900 {
-    color: #1a202c;
+    color: #1E222B;
   }
 
   .lg\:text-red-100 {
@@ -27620,7 +27620,7 @@ code, kbd, samp {
   }
 
   .lg\:hover\:text-gray-900:hover {
-    color: #1a202c;
+    color: #1E222B;
   }
 
   .lg\:hover\:text-red-100:hover {
@@ -27996,7 +27996,7 @@ code, kbd, samp {
   }
 
   .lg\:focus\:text-gray-900:focus {
-    color: #1a202c;
+    color: #1E222B;
   }
 
   .lg\:focus\:text-red-100:focus {
@@ -28845,7 +28845,7 @@ code, kbd, samp {
   }
 
   .xl\:bg-gray-900 {
-    background-color: #1a202c;
+    background-color: #1E222B;
   }
 
   .xl\:bg-red-100 {
@@ -29221,7 +29221,7 @@ code, kbd, samp {
   }
 
   .xl\:hover\:bg-gray-900:hover {
-    background-color: #1a202c;
+    background-color: #1E222B;
   }
 
   .xl\:hover\:bg-red-100:hover {
@@ -29597,7 +29597,7 @@ code, kbd, samp {
   }
 
   .xl\:focus\:bg-gray-900:focus {
-    background-color: #1a202c;
+    background-color: #1E222B;
   }
 
   .xl\:focus\:bg-red-100:focus {
@@ -30053,7 +30053,7 @@ code, kbd, samp {
   }
 
   .xl\:border-gray-900 {
-    border-color: #1a202c;
+    border-color: #1E222B;
   }
 
   .xl\:border-red-100 {
@@ -30429,7 +30429,7 @@ code, kbd, samp {
   }
 
   .xl\:hover\:border-gray-900:hover {
-    border-color: #1a202c;
+    border-color: #1E222B;
   }
 
   .xl\:hover\:border-red-100:hover {
@@ -30805,7 +30805,7 @@ code, kbd, samp {
   }
 
   .xl\:focus\:border-gray-900:focus {
-    border-color: #1a202c;
+    border-color: #1E222B;
   }
 
   .xl\:focus\:border-red-100:focus {
@@ -34234,7 +34234,7 @@ code, kbd, samp {
   }
 
   .xl\:text-gray-900 {
-    color: #1a202c;
+    color: #1E222B;
   }
 
   .xl\:text-red-100 {
@@ -34610,7 +34610,7 @@ code, kbd, samp {
   }
 
   .xl\:hover\:text-gray-900:hover {
-    color: #1a202c;
+    color: #1E222B;
   }
 
   .xl\:hover\:text-red-100:hover {
@@ -34986,7 +34986,7 @@ code, kbd, samp {
   }
 
   .xl\:focus\:text-gray-900:focus {
-    color: #1a202c;
+    color: #1E222B;
   }
 
   .xl\:focus\:text-red-100:focus {
