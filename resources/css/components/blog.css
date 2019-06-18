@@ -44,6 +44,11 @@
 .post-body .embedded_image img{
     @apply max-w-4xl px-5 block;
 }
+@media screen and (max-width:1024px){
+    .post-body .embedded_image img{
+        @apply max-w-full px-5 block;
+    }
+}
 .post-body .embedded_image p{
     @apply mt-3 text-center text-blue-300 text-sm mb-0;
 }

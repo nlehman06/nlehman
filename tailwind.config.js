@@ -9,6 +9,7 @@ module.exports = {
           '100': '#eaedf1',
           '300': '#7C9CAA',
           '900': '#1C343D',
+          '950': '#122126',
         },
         orange: {
           ...colors.orange,

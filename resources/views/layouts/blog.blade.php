@@ -20,7 +20,7 @@
 <body class="bg-blue-900 text-white">
 <div id="app">
 
-    <header class="mb-10">
+    <header class="my-10">
         <div class="container mx-auto px-5 lg:max-w-4xl">
             <h1 class="text-center font-thin">
                 <a href="/blog" class="no-underline">Nathan Lehman's Journal</a>
@@ -28,11 +28,7 @@
             <span class="text-center block italic text-blue-300 mt-4 text-sm">
                 Web developer, family man and reluctant fitness enthusiast.
             </span>
-            <nav class="text-center border-t border-b border-blue-300 mt-8 pt-3">
-                <a href="/blog/code" class="no-underline text-blue-300 mb-3 inline-block hover:text-blue-500">Code</a>
-                <a href="/blog/life" class="no-underline text-blue-300 mb-3 inline-block hover:text-blue-500 pl-5">Life</a>
-                <a href="/blog/fitness" class="no-underline text-blue-300 mb-3 inline-block hover:text-blue-500 pl-5">Fitness</a>
-            </nav>
+            <tag-navigation :tags="{{ $tags }}"></tag-navigation>
         </div>
     </header>
 

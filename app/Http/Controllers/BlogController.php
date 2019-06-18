@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Wink\WinkPost;
+use Wink\WinkTag;
 
 class BlogController extends Controller {
 
@@ -10,10 +11,20 @@ class BlogController extends Controller {
     {
         $posts = WinkPost::with('tags')
             ->live()
-            ->orderBy('publish_date', 'DESC')
-            ->simplePaginate(10);
+            ->orderBy('publish_date', 'DESC');
 
-        return view('blog.index', compact('posts'));
+        if(request()->path() !== 'blog') {
+            $posts = $posts->whereHas('tags', function ($query) {
+                $slug = explode('/', request()->path())[1];
+                $query->whereSlug($slug);
+            });
+        }
+
+        $posts = $posts->simplePaginate(10);
+
+        $tags = WinkTag::withCount('posts')->orderBy('posts_count', 'DESC')->get();
+
+        return view('blog.index', compact('posts', 'tags'));
     }
 
     public function show($slug)
@@ -23,6 +34,8 @@ class BlogController extends Controller {
             ->whereSlug($slug)
             ->firstOrFail();
 
-        return view('blog.show', compact('post'));
+        $tags = WinkTag::withCount('posts')->orderBy('posts_count', 'DESC')->get();
+
+        return view('blog.show', compact('post', 'tags'));
     }
 }
