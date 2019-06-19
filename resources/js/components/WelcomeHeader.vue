@@ -32,7 +32,7 @@
         </svg>
         <div>
           <a href="/blog" class="text-blue-100 no-underline hover:underline font-medium">Blog</a>
-          <a href="#" class="text-blue-100 no-underline hover:underline font-medium pl-4">Contact</a>
+          <a href="#contactForm" class="text-blue-100 no-underline hover:underline font-medium pl-4">Contact</a>
         </div>
       </nav>
       <div class="font-display font-black text-4xl sm:text-6xl pt-10 pb-6">Nathan Lehman</div>

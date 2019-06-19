@@ -1,5 +1,5 @@
 <template>
-  <section class="flex flex-col sm:flex-row justify-center items-center mt-20 px-4 mb-20">
+  <section class="flex flex-col sm:flex-row justify-center items-center mt-20 px-4 mb-20 max-w-6xl mx-auto">
     <div class="max-w-lg flex justify-center items-center">
       <img
               alt="Nathan Lehman"

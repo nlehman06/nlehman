@@ -50,6 +50,10 @@
         <about-me></about-me>
     </div>
 
+    <contact-form class="-mb-48 z-20"></contact-form>
+
+    <welcome-footer class="z-10"></welcome-footer>
+
 </div>
 
 <!-- Scripts -->

@@ -25,6 +25,8 @@ Vue.component('welcome-header', require('./components/WelcomeHeader.vue').defaul
 Vue.component('welcome-icons', require('./components/WelcomeIcons.vue').default);
 Vue.component('full-stack', require('./components/FullStack.vue').default);
 Vue.component('about-me', require('./components/AboutMe.vue').default);
+Vue.component('contact-form', require('./components/ContactForm.vue').default);
+Vue.component('welcome-footer', require('./components/WelcomeFooter.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
