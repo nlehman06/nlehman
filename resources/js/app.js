@@ -24,6 +24,7 @@ Vue.component('tag-navigation', require('./components/TagNavigation.vue').defaul
 Vue.component('welcome-header', require('./components/WelcomeHeader.vue').default);
 Vue.component('welcome-icons', require('./components/WelcomeIcons.vue').default);
 Vue.component('full-stack', require('./components/FullStack.vue').default);
+Vue.component('about-me', require('./components/AboutMe.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

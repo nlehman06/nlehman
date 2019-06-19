@@ -11,7 +11,22 @@ module.exports = {
         },
         gray:   {
           ...colors.gray,
+          '300': '#A8ADBC',
+          '400': '#A7A7A7',
+          '800': '#2F343F',
           '900': '#1E222B',
+        },
+        purple: {
+          ...colors.purple,
+          '500': '#9B859D',
+        },
+        orange: {
+          ...colors.orange,
+          '500': '#CF6A4C',
+        },
+        green: {
+          ...colors.green,
+          '500': '#8F9D6A',
         },
       },
       fontSize:   {
