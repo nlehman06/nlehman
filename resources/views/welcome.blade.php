@@ -15,7 +15,12 @@
     <link href="https://fonts.googleapis.com/css?family=Orbitron:900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap" rel="stylesheet">
 
+    <script src="https://www.google.com/recaptcha/api.js?render={{ config('services.recaptcha.key') }}"></script>
+
     <style>
+        .grecaptcha-badge {
+            visibility: hidden;
+        }
         .about-me-bg {
             background-image: url('/img/about-me-bg.svg');
             background-repeat: no-repeat;
@@ -50,7 +55,7 @@
         <about-me></about-me>
     </div>
 
-    <contact-form class="-mb-48 z-20"></contact-form>
+    <contact-form class="-mb-48 z-20" :site-key="'{{ config('services.recaptcha.key') }}'"></contact-form>
 
     <welcome-footer class="z-10"></welcome-footer>
 

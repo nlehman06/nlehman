@@ -1899,7 +1899,90 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ __webpack_exports__["default"] = ({});
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['siteKey'],
+  data: function data() {
+    return {
+      buttonMessage: 'Send Message',
+      sending: false,
+      showResult: false,
+      resultStatus: 'good',
+      result: '',
+      message: {
+        name: '',
+        email: '',
+        message: '',
+        recaptcha: ''
+      },
+      errors: []
+    };
+  },
+  methods: {
+    sendMessage: function sendMessage() {
+      this.sending = true;
+      this.buttonMessage = 'Sending...';
+      this.resultStatus = 'good';
+      this.errors = [];
+      var vm = this;
+      grecaptcha.ready(function () {
+        grecaptcha.execute(vm.siteKey, {
+          action: 'contactForm'
+        }).then(function (token) {
+          if (token) {
+            vm.message.recaptcha = token;
+            axios.post('/api/contact', vm.message).then(function () {
+              vm.sending = false;
+              vm.showResult = true;
+              vm.result = "Your message has been sent.  I'll be in touch shortly.";
+              vm.buttonMessage = 'Send Message';
+              vm.message.name = '';
+              vm.message.email = '';
+              vm.message.message = '';
+            })["catch"](function (error) {
+              vm.sending = false;
+              console.log(error.response);
+              vm.showResult = true;
+              vm.resultStatus = 'bad';
+              vm.result = "Message failed to send!  Try again or email me directly at nathan@nlehman.dev";
+
+              if (error.response) {
+                vm.result = error.response.data.message;
+                vm.errors = error.response.data.errors;
+              }
+
+              vm.buttonMessage = 'Try Again';
+            });
+          }
+        });
+      });
+    }
+  }
+});
 
 /***/ }),
 
@@ -2414,6 +2497,12 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -21276,89 +21365,177 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "section",
-      {
-        staticClass:
-          "flex flex-col items-center justify-center px-4 max-w-lg mx-auto",
-        attrs: { id: "contactForm" }
-      },
-      [
-        _c(
-          "h2",
-          { staticClass: "pt-20 pb-10 text-4xl text-center font-semibold" },
-          [_vm._v("Contact Form")]
-        ),
-        _vm._v(" "),
-        _c("p", { staticClass: "text-center mb-4" }, [
-          _vm._v(
-            "Let's start a conversation about how we can improve your business flow and bring your ideas to life."
-          )
-        ]),
-        _vm._v(" "),
-        _c(
-          "form",
-          {
-            staticClass: "z-20 flex flex-col items-center justify-center w-full"
-          },
-          [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "flex flex-col sm:flex-row items-center justify-center sm:-mx-4 w-full sm:w-auto"
-              },
-              [
-                _c("div", { staticClass: "sm:px-4 w-full sm:w-auto" }, [
-                  _c("input", {
-                    staticClass:
-                      "shadow my-2 w-full bg-blue-800 rounded-lg px-4 py-2 text-blue-100 focus:outline-none focus:shadow-outline",
-                    attrs: { name: "name", placeholder: "Name" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "sm:px-4 w-full sm:w-auto" }, [
-                  _c("input", {
-                    staticClass:
-                      "shadow my-2 w-full bg-blue-800 rounded-lg px-4 py-2 text-blue-100 focus:outline-none focus:shadow-outline",
-                    attrs: { name: "email", placeholder: "Email" }
-                  })
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c("textarea", {
-              staticClass:
-                "shadow my-2 w-full bg-blue-800 rounded-lg px-4 py-2 text-blue-100 focus:outline-none focus:shadow-outline",
-              attrs: {
-                name: "message",
-                rows: "5",
-                cols: "10",
-                placeholder: "Your Message"
-              }
-            }),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass:
-                  "text-lg font-medium rounded-full border-2 px-6 py-4 hover:bg-blue-100 bg-blue-100-75 w-full my-2"
-              },
-              [_vm._v("Send Message")]
-            )
-          ]
+  return _c(
+    "section",
+    {
+      staticClass:
+        "flex flex-col items-center justify-center px-4 max-w-lg mx-auto",
+      attrs: { id: "contactForm" }
+    },
+    [
+      _c(
+        "h2",
+        { staticClass: "pt-20 pb-10 text-4xl text-center font-semibold" },
+        [_vm._v("Contact Form")]
+      ),
+      _vm._v(" "),
+      _c("p", { staticClass: "text-center mb-4" }, [
+        _vm._v(
+          "Let's start a conversation about how we can improve your business flow and bring your\n    ideas to life."
         )
-      ]
-    )
-  }
-]
+      ]),
+      _vm._v(" "),
+      _c(
+        "form",
+        {
+          staticClass: "z-20 flex flex-col items-center justify-center w-full",
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.sendMessage()
+            }
+          }
+        },
+        [
+          _c(
+            "div",
+            {
+              staticClass:
+                "flex flex-col sm:flex-row items-center justify-center sm:-mx-4 w-full sm:w-auto"
+            },
+            [
+              _c("div", { staticClass: "sm:px-4 w-full sm:w-auto" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.message.name,
+                      expression: "message.name"
+                    }
+                  ],
+                  staticClass:
+                    "shadow my-2 w-full bg-blue-800 rounded-lg px-4 py-2 text-blue-100 focus:outline-none focus:shadow-outline",
+                  attrs: { name: "name", placeholder: "Name" },
+                  domProps: { value: _vm.message.name },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.message, "name", $event.target.value)
+                    }
+                  }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "sm:px-4 w-full sm:w-auto" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.message.email,
+                      expression: "message.email"
+                    }
+                  ],
+                  staticClass:
+                    "shadow my-2 w-full bg-blue-800 rounded-lg px-4 py-2 text-blue-100 focus:outline-none focus:shadow-outline",
+                  attrs: { name: "email", placeholder: "Email" },
+                  domProps: { value: _vm.message.email },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.message, "email", $event.target.value)
+                    }
+                  }
+                })
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.message.message,
+                expression: "message.message"
+              }
+            ],
+            staticClass:
+              "shadow my-2 w-full bg-blue-800 rounded-lg px-4 py-2 text-blue-100 focus:outline-none focus:shadow-outline",
+            attrs: {
+              name: "message",
+              rows: "5",
+              cols: "10",
+              placeholder: "Your Message"
+            },
+            domProps: { value: _vm.message.message },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.message, "message", $event.target.value)
+              }
+            }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            attrs: { type: "hidden", name: "recaptcha", id: "recaptcha" }
+          }),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass:
+                "text-lg font-medium rounded-full border-2 px-6 py-4 hover:bg-blue-100 bg-blue-100-75 w-full my-2",
+              attrs: { disabled: _vm.sending }
+            },
+            [_vm._v("\n      " + _vm._s(_vm.buttonMessage) + "\n    ")]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.showResult,
+              expression: "showResult"
+            }
+          ],
+          staticClass: "z-10 text-center text-blue-100"
+        },
+        [
+          _c(
+            "span",
+            { class: { "text-red-500": _vm.resultStatus === "bad" } },
+            [_vm._v(_vm._s(_vm.result))]
+          ),
+          _vm._v(" "),
+          _c(
+            "ul",
+            { staticClass: "list-none p-0" },
+            _vm._l(_vm.errors, function(error) {
+              return _c("li", { staticClass: "text-red-500" }, [
+                _vm._v(_vm._s(error[0]))
+              ])
+            }),
+            0
+          )
+        ]
+      )
+    ]
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -22901,7 +23078,9 @@ var render = function() {
           ]
         )
       ]
-    )
+    ),
+    _vm._v(" "),
+    _vm._m(1)
   ])
 }
 var staticRenderFns = [
@@ -22918,6 +23097,22 @@ var staticRenderFns = [
         },
         [_vm._v("nathan@nlehman.dev")]
       )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", { staticClass: "text-xs text-blue-100 text-right" }, [
+      _vm._v("\n    This site is protected by reCAPTCHA and the Google\n    "),
+      _c("a", { attrs: { href: "https://policies.google.com/privacy" } }, [
+        _vm._v("Privacy Policy")
+      ]),
+      _vm._v(" and\n    "),
+      _c("a", { attrs: { href: "https://policies.google.com/terms" } }, [
+        _vm._v("Terms of Service")
+      ]),
+      _vm._v(" apply.\n  ")
     ])
   }
 ]
