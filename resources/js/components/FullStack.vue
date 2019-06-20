@@ -9,7 +9,7 @@
         </p>
         <p class="pb-10">
           While I have experience in many different programming languages and frameworks,
-          I prefer to you <a href="https://laravel.com" target="_blank">Laravel</a>
+          I prefer to use <a href="https://laravel.com" target="_blank">Laravel</a>
           for the back end with <a href="https://vuejs.org" target="_blank">Vue JS</a> and
           <a href="https://tailwindcss.com" target="_blank">Tailwind</a> as the front end.
         </p>
