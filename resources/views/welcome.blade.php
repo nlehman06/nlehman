@@ -14,6 +14,7 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron:900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" />
 
     <script src="https://www.google.com/recaptcha/api.js?render={{ config('services.recaptcha.key') }}"></script>
 
