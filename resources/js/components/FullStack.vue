@@ -3,9 +3,16 @@
     <div class="max-w-6xl mx-auto px-4 pb-20 container sm:flex sm:items-center">
       <div class="sm:w-1/2">
         <h2 class="pt-20 pb-10 text-4xl text-center font-semibold">Full Stack</h2>
-        <p class="pb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, blanditiis cumque, dicta,
-          dolor earum eos esse est facilis fuga fugiat hic in natus nulla pariatur provident quibusdam voluptas
-          voluptate voluptatibus.</p>
+        <p class="pb-10">
+          I am a full stack web developer. This means I handle the front end, backend, database, server
+          and anything else that is needed to build fully functioning web applications.
+        </p>
+        <p class="pb-10">
+          While I have experience in many different programming languages and frameworks,
+          I prefer to you <a href="https://laravel.com" target="_blank">Laravel</a>
+          for the back end with <a href="https://vuejs.org" target="_blank">Vue JS</a> and
+          <a href="https://tailwindcss.com" target="_blank">Tailwind</a> as the front end.
+        </p>
       </div>
       <div class="flex flex-col justify-center sm:mt-10 sm:w-1/2">
         <img alt="laravel" class="z-30 sm:self-end" src="/img/laravel.svg">

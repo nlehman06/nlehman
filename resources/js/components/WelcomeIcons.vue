@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-around pt-6 px-4">
+  <section class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center sm:items-start justify-around pt-6 px-4">
     <div class="max-w-xs flex flex-col items-center pb-10 sm:px-4">
       <svg class="w-24 h-24 mb-4" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
            viewBox="0 0 64 64"
@@ -32,8 +32,16 @@
         </linearGradient>
         <circle style="fill:url(#SVGID_4__43669);" cx="32" cy="32" r="4"></circle>
       </svg>
-      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam, blanditiis dolore doloribus error et
-        maxime nam necessitatibus nihil nisi numquam obcaecati pariatur quam quis sint ullam unde, vel, vero!</p>
+      <p class="text-center">
+        I build custom web applications that can greatly improve your business procedures.
+        Examples of these include:
+      </p>
+      <ul class="self-start pt-4">
+        <li>company intranet</li>
+        <li>customer portal</li>
+        <li>custom reporting</li>
+        <li>so much more</li>
+      </ul>
     </div>
     <div class="max-w-xs flex flex-col items-center pb-10 sm:px-4">
       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
@@ -83,8 +91,9 @@
         <path style="fill:url(#SVGID_6__43987);"
               d="M28,11c2.206,0,4-1.794,4-4s-1.794-4-4-4s-4,1.794-4,4S25.794,11,28,11z M28,5  c1.103,0,2,0.897,2,2s-0.897,2-2,2s-2-0.897-2-2S26.897,5,28,5z"></path>
       </svg>
-      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam, blanditiis dolore doloribus error et
-        maxime nam necessitatibus nihil nisi numquam obcaecati pariatur quam quis sint ullam unde, vel, vero!</p>
+      <p class="text-center">
+        Having a web application means you can access your business from anywhere on any device.
+      </p>
     </div>
     <div class="max-w-xs flex flex-col items-center pb-10 sm:px-4">
       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
@@ -169,8 +178,12 @@
         </linearGradient>
         <rect x="20" y="24" style="fill:url(#SVGID_12__44046);" width="5" height="2"></rect>
       </svg>
-      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam, blanditiis dolore doloribus error et
-        maxime nam necessitatibus nihil nisi numquam obcaecati pariatur quam quis sint ullam unde, vel, vero!</p>
+      <p class="text-center pb-10">
+        I focus on writing clean, elegant code using test driven development using the latest languages and technologies.
+      </p>
+      <p>
+        This means you can be sure that you can have an update to date, secure application that is easy to alter and extend when needed.
+      </p>
     </div>
   </section>
 </template>
