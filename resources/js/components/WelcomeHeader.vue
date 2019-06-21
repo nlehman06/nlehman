@@ -37,8 +37,8 @@
           <a href="#contactForm" class="text-blue-100 no-underline hover:underline font-medium pl-4">Contact</a>
         </div>
       </nav>
-      <div class="font-display font-black text-4xl sm:text-6xl pt-10 pb-6">Nathan Lehman</div>
-      <div class="pb-10">Web application developer</div>
+      <h1 class="font-display font-black text-4xl sm:text-6xl pt-10 pb-6">Nathan Lehman</h1>
+      <h4 class="pb-10">Web application developer</h4>
       <div class="pt-8 pb-40">
         <button
                 type="button"

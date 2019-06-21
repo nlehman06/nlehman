@@ -19,6 +19,23 @@
     Other technologies I prefer are MySql, Nginx or Apache, git, and Python.
     I build using test driven development (TDD) with a focus on responsive, mobile first design.
     I'm located in Indiana in the Indianapolis region.">
+    <meta name="og:url" content="https://nlehman.dev">
+    <meta name="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="og:title" content="{{ config('app.name', 'Laravel') }}">
+    <meta name="twitter:title" content="{{ config('app.name', 'Laravel') }}">
+    <meta name="og:description" content="I'm a freelance full stack web application developer.
+    I specialize in writing Laravel, VueJS and Tailwind css applications and sites.
+    Other technologies I prefer are MySql, Nginx or Apache, git, and Python.
+    I build using test driven development (TDD) with a focus on responsive, mobile first design.
+    I'm located in Indiana in the Indianapolis region.">
+    <meta name="twitter:description" content="I'm a freelance full stack web application developer.
+    I specialize in writing Laravel, VueJS and Tailwind css applications and sites.
+    Other technologies I prefer are MySql, Nginx or Apache, git, and Python.
+    I build using test driven development (TDD) with a focus on responsive, mobile first design.
+    I'm located in Indiana in the Indianapolis region.">
+    <meta name="og:image" content="{{ asset('img/LogoLarge.png') }}">
+    <meta name="twitter:image" content="{{ asset('img/LogoLarge.png') }}">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
