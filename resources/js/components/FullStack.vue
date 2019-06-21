@@ -33,8 +33,8 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100%;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 75% 93%, 55% 100%, 20% 88%, 0 96%);
-    clip-path: polygon(0 0, 100% 0, 100% 97%, 75% 96%, 55% 100%, 20% 93%, 0 98%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 97%, 75% 96%, 55% 100%, 20% 97%, 0 98%);
+    clip-path: polygon(0 0, 100% 0, 100% 97%, 75% 96%, 55% 100%, 20% 97%, 0 98%);
   }
 
   @media (min-width: 640px) {
