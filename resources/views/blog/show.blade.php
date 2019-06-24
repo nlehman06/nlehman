@@ -1,5 +1,9 @@
 @extends('layouts.blog')
 
+@section('title')
+    - {{ $post->title }}
+@endsection
+
 @section('meta')
     @foreach($post->meta as $name => $meta)
         @if(substr($name, 0, 9) === 'opengraph')
