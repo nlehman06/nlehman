@@ -12,7 +12,7 @@
 @tailwind base;
 
 a {
-    @apply text-white underline;
+    @apply text-blue-900 underline;
 }
 a:hover {
     @apply no-underline;

@@ -34,18 +34,15 @@
         </a>
         <div>
           <a href="/blog" class="text-blue-100 no-underline hover:underline font-medium">Blog</a>
-          <a href="#contactForm" class="text-blue-100 no-underline hover:underline font-medium pl-4">Contact</a>
+          <a href="/#contactForm"
+             class="text-blue-100 no-underline hover:underline font-medium pl-4">Contact</a>
         </div>
       </nav>
-      <h1 class="font-display font-black text-4xl sm:text-6xl pt-10 pb-6">Nathan Lehman</h1>
-      <h4 class="pb-10">Web application developer</h4>
-      <div class="pt-8 pb-40">
-        <button
-                type="button"
-                v-on:click="goToContact()"
-                class="text-sm sm:text-lg font-medium rounded-full border-2 px-6 py-4 hover:bg-blue-100-25 focus:outline-none focus:shadow-outline">
-          Let's build something together
-        </button>
+      <h1 class="font-display font-black text-4xl sm:text-6xl">
+        <a href="/blog" class="no-underline text-blue-100 hover:underline">Nathan's Blog</a>
+      </h1>
+      <div class="pb-64 w-full max-w-4xl">
+        <tag-navigation :tags="tags"></tag-navigation>
       </div>
     </header>
   </div>
@@ -53,42 +50,9 @@
 
 <script>
   export default {
-    methods: {
-      goToContact() {
-        window.location = '#contactForm'
-      }
-    },
+    props: ['tags']
   }
 </script>
 
 <style>
-
-  .shadow-wrap {
-    filter: drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.15));
-  }
-
-  .header-gradient {
-    background-image: url('/img/header-bg-1.svg'),
-    url('/img/header-bg-2.svg'),
-    radial-gradient(353.95px at 49.87% 89.04%, #466D91 0%, #36527B 31.77%, #16294D 100%);
-    background-repeat: no-repeat, no-repeat, repeat-x;
-    background-position: -195px -27%, -137% 0, bottom;
-    background-size: 100%, 150%, 100%;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 60% 100%, 0 85%);
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 60% 100%, 0 85%);
-  }
-
-  @media (min-width: 640px) {
-    .header-gradient {
-      background-image: url('/img/header-bg-1.svg'),
-      url('/img/header-bg-2.svg'),
-      url('/img/header-bg-3.svg'),
-      radial-gradient(353.95px at 49.87% 89.04%, #466D91 0%, #36527B 31.77%, #16294D 100%);
-      background-repeat: no-repeat, no-repeat, no-repeat, repeat-x;
-      background-position: -27% -27%, 144% -0%, 142% -0%;
-      background-size: 38%, 50%, 50%, 100%;
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 100%, 0 75%);
-      clip-path: polygon(0 0, 100% 0, 100% 80%, 60% 100%, 0 75%);
-    }
-  }
 </style>

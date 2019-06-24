@@ -26,17 +26,21 @@
       </div>
     </div>
 
-    <p class="text-xs text-blue-100 text-right">
+    <p class="text-xs text-blue-100 text-right" v-if="usingRecaptcha">
       This site is protected by reCAPTCHA and the Google
-      <a href="https://policies.google.com/privacy">Privacy Policy</a> and
-      <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+      <a href="https://policies.google.com/privacy" class="text-blue-100">Privacy Policy</a> and
+      <a href="https://policies.google.com/terms" class="text-blue-100">Terms of Service</a> apply.
     </p>
   </footer>
 </template>
 
 <script>
   export default {
-
+    computed: {
+      usingRecaptcha() {
+        return window.location.pathname === '/';
+      }
+    },
   }
 </script>
 

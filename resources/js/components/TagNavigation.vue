@@ -1,26 +1,25 @@
 <template>
-  <nav class="flex items-center justify-around relative border-t border-b border-blue-300 mt-8 pt-3">
-    <a v-for="tag in visibleTags"
-       :href="`/blog/${tag.slug}`"
-       class="no-underline text-blue-300 mb-3 inline-block hover:text-blue-500"
-    >
-      {{ tag.name }}
-    </a>
-    <button
-            v-if="needsMore"
-            v-on:click="showMore = !showMore"
-            class="text-blue-300 mb-3 inline-block hover:text-blue-500"
-    >
-      More
-    </button>
-    <transition name="slide-down">
-      <div v-show="showMore"
-           class="block absolute top-0 right-0 bg-blue-950 flex flex-col justify-center mt-8 mr-12 w-1/2 sm:w-1/4">
-        <div class="text-right p-2 text-gray-300 cursor-pointer" v-on:click="showMore = false">&times;</div>
-        <a v-for="tag in hiddenTags" :href="`/blog/${tag.slug}`"
-           class="no-underline text-blue-300 my-3 inline-block hover:text-blue-500 pl-2">{{ tag.name }}</a>
-      </div>
-    </transition>
+  <nav class="relative border-t border-b border-blue-100 mt-8 pt-3">
+    <div class="flex items-center justify-around">
+      <a v-for="tag in visibleTags"
+         :href="`/blog/${tag.slug}`"
+         class="no-underline text-blue-100 mb-3 inline-block hover:text-blue-500"
+      >
+        {{ tag.name }}
+      </a>
+      <button
+              v-if="needsMore"
+              v-on:click="showMore = !showMore"
+              class="text-blue-100 mb-3 inline-block hover:text-blue-500"
+      >
+        {{ buttonText }}
+      </button>
+    </div>
+    <div v-show="showMore"
+         class="flex items-center justify-around flex-wrap">
+      <a v-for="tag in hiddenTags" :href="`/blog/${tag.slug}`"
+         class="no-underline text-blue-100 my-3 inline-block hover:text-blue-500 p-4">{{ tag.name }}</a>
+    </div>
   </nav>
 </template>
 
@@ -32,7 +31,7 @@
       },
       visibleTagAmount: {
         type:    Number,
-        default: 4
+        default: 3
       }
     },
     data() {
@@ -49,6 +48,9 @@
       },
       hiddenTags() {
         return this.needsMore ? this.tags.slice(this.visibleTagAmount) : []
+      },
+      buttonText() {
+        return this.showMore ? 'Less' : 'More'
       }
     },
   }

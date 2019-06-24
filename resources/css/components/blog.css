@@ -6,7 +6,7 @@
 }
 
 .post-body pre {
-    @apply bg-black border-2 border-solid border-gray-500 overflow-auto p-2 mb-8 font-mono;
+    @apply bg-gray-800 border-2 border-solid border-gray-500 overflow-auto p-2 mb-8 font-mono text-blue-100 rounded;
 }
 .post-body h2 {
     @apply mb-8 text-3xl;
@@ -14,7 +14,7 @@
 
 
 .post-body hr{
-    @apply border-none text-blue-300 text-center mb-20;
+    @apply border-none text-blue-900 text-center mb-20;
     letter-spacing:1em;
 }
 .post-body hr:before{
@@ -50,12 +50,16 @@
     }
 }
 .post-body .embedded_image p{
-    @apply mt-3 text-center text-blue-300 text-sm mb-0;
+    @apply mt-3 text-center text-blue-900 text-sm mb-0;
 }
 .post-body .inline_html{
     @apply mb-8;
 }
 .post-body blockquote{
     @apply mb-8 pl-5 italic border-l-4 border-blue-300;
+}
+
+.post-body code{
+    @apply text-blue-100 bg-gray-800;
 }
 

@@ -179,10 +179,10 @@
         <rect x="20" y="24" style="fill:url(#SVGID_12__44046);" width="5" height="2"></rect>
       </svg>
       <p class="text-center pb-5">
-        I focus on writing clean, elegant code using test driven development using the latest languages and technologies.
+        I focus on writing clean, elegant code using test driven development utilizing the latest languages and technologies.
       </p>
       <p class="text-center">
-        This means you can be sure that you can have an update to date, secure application that is easy to alter and extend when needed.
+        This means you can be sure that you can have an up-to-date, secure application that is easy to alter and extend when needed.
       </p>
     </div>
   </section>
