@@ -16,6 +16,7 @@
         "laravel/tinker": "^1.0",
         "league/flysystem-aws-s3-v3": "~1.0",
         "league/flysystem-cached-adapter": "~1.0",
+        "spatie/laravel-sitemap": "^5.3",
         "writingink/wink": "^0.0.13"
     },
     "require-dev": {
