@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 .post-body p {
     @apply mb-8;
 }
@@ -58,8 +59,5 @@
 .post-body blockquote{
     @apply mb-8 pl-5 italic border-l-4 border-blue-300;
 }
-
-.post-body code{
-    @apply text-blue-100 bg-gray-800;
-}
+/* purgecss end ignore */
 

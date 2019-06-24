@@ -9,34 +9,9 @@
  *
  * @import "tailwindcss/base";
  */
-@tailwind base;
+@import "../../node_modules/tailwindcss/base.css";
 
-a {
-    @apply text-blue-900 underline;
-}
-a:hover {
-    @apply no-underline;
-}
-
-ol {
-    @apply list-decimal pl-10;
-}
-
-ul {
-    @apply list-disc pl-10;
-}
-
-h3 {
-    @apply text-lg font-bold;
-}
-h1 {
-    @apply text-4xl;
-}
-
-code, kbd, samp {
-    @apply font-mono text-base rounded p-1 text-sm;
-    background: #011527;
-}
+@import "./components/base.css";
 
 /**
  * This injects any component classes registered by plugins.
@@ -45,7 +20,7 @@ code, kbd, samp {
  *
  * @import "tailwindcss/components";
  */
-@tailwind components;
+@import "../../node_modules/tailwindcss/components.css";
 
 /**
  * Here you would add any of your custom component classes; stuff that you'd
@@ -72,7 +47,7 @@ code, kbd, samp {
  *
  * @import "tailwindcss/utilities";
  */
-@tailwind utilities;
+@import "../../node_modules/tailwindcss/utilities.css";
 
 /**
  * Here you would add any custom utilities you need that don't come out of the
