@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
+    @env('production')
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142466428-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
       gtag('js', new Date());
 
       gtag('config', 'UA-142466428-1');
     </script>
+    @endenv
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +52,7 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron:900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" />
+    <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}"/>
 
     <script src="https://www.google.com/recaptcha/api.js?render={{ config('services.recaptcha.key') }}"></script>
 
@@ -54,6 +60,7 @@
         .grecaptcha-badge {
             visibility: hidden;
         }
+
         .about-me-bg {
             background-image: url('/img/about-me-bg.svg');
             background-repeat: no-repeat;

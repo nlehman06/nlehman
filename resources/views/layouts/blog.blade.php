@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
+    @env('production')
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142466428-1"></script>
     <script>
@@ -14,6 +15,7 @@
 
       gtag('config', 'UA-142466428-1');
     </script>
+    @endenv
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
