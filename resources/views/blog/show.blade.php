@@ -5,6 +5,7 @@
 @endsection
 
 @section('meta')
+    <meta property="og:type" content="article">
     @foreach($post->meta as $name => $meta)
         @if(substr($name, 0, 9) === 'opengraph')
             <meta property="{{ str_replace('opengraph_', 'og:', $name) }}" content="{{ $meta }}">

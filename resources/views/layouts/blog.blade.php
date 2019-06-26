@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="{{ app()->getLocale() }}" prefix="og: http://ogp.me/ns#">
 <head>
     @env('production')
     <!-- Global site tag (gtag.js) - Google Analytics -->
