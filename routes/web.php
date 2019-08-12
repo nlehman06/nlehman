@@ -23,3 +23,4 @@ Route::get('/blog', 'BlogController@index')->name('blog');
 Route::get('blog/{tag}', 'BlogController@index')->name('blog.tag');
 Route::get('blog/post/{slug}', 'BlogController@show')->name('blog.show');
 
+Route::post('e-forms', 'EvelynController@send')->name('eForms.send');
